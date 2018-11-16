@@ -5,7 +5,7 @@ from sklearn import svm
 X = np.empty([code.Total_data, 135], dtype=float)
 data = np.empty([1,135], dtype='object')
 
-book = xlrd.open_workbook('arrays.xlsx')
+book = xlrd.open_workbook('Features.xlsx')
 sheet = book.sheet_by_name('Sheet1')
 for c in range(sheet.ncols):
     for r in range(sheet.nrows):
@@ -20,7 +20,7 @@ for i in range(0,151):
 for i in range(151,code.Total_data):
 	y[i] = classes[1]
 
-clf = svm.SVC(C=1, kernel = 'linear')
+clf = svm.SVC(C=70, kernel = 'rbf')
 clf.fit(X, y)
 
 data = code.Gesture()
