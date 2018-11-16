@@ -1,5 +1,5 @@
 # Gesture-Recognition-using-Support-Vector-Machines
-A project to implement a gesture recognition system using Support Vector Machines(SVM) from inertial sensors(3-d accelerometer)
+A project to re-implementing my old project of gesture recognition system using Support Vector Machines(SVM) from inertial sensors(3-d accelerometer)
 
 ### This project implements the paper:
 https://link.springer.com/chapter/10.1007/978-3-642-02830-4_4
